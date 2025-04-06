@@ -19,16 +19,22 @@
 </body>
 </html> -->
 
-<!doctype html>
-<html>
-    <head><title>Convert API snippet</title></head>
-    <body>
-        <form action="https://v2.convertapi.com/convert/pdf/to/docx?auth=secret_2CitnroLCAMSTGiX&download=attachment" method="post" enctype="multipart/form-data">
-            <input type="file" name="File" />
-            <input type="hidden" name="FileName" value="htgtr" />
-            <input type="hidden" name="Password" value="77t328173677" />
-            <input type="submit" value="Convert file"/>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحويل Word/PowerPoint إلى PDF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>تحويل إلى PDF</h1>
+    <form id="convert-form">
+      <input type="file" id="input-file" accept=".docx,.pptx" required>
+      <button type="submit">تحويل</button>
+    </form>
+    <p id="status"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
-
